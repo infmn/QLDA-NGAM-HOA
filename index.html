@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Tiêu đề và Mô tả hiển thị khi chia sẻ lên mạng xã hội (Zalo, Facebook, v.v.) -->
     <title>Hệ thống Quản lý Tiến độ Ngầm hóa QLDA</title>
     <meta name="description" content="Trang chủ hệ thống quản lý và giám sát dự án ngầm hóa cáp viễn thông">
-    
+
     <!-- Open Graph / Facebook / Zalo Metadata -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Hệ thống Quản lý Tiến độ Ngầm hóa">
@@ -30,6 +31,7 @@
             margin: 0;
             padding: 0;
         }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: #f8fafc;
@@ -40,6 +42,7 @@
             min-height: 100vh;
             padding: 20px;
         }
+
         .card {
             background: #ffffff;
             padding: 40px;
@@ -49,6 +52,7 @@
             max-width: 420px;
             width: 100%;
         }
+
         .spinner {
             width: 48px;
             height: 48px;
@@ -58,22 +62,31 @@
             animation: spin 1s linear infinite;
             margin: 0 auto 24px;
         }
+
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
+
         h1 {
             font-size: 18px;
             font-weight: 600;
             color: #0f172a;
             margin-bottom: 8px;
         }
+
         p {
             font-size: 14px;
             color: #64748b;
             line-height: 1.5;
             margin-bottom: 24px;
         }
+
         .btn {
             display: inline-block;
             background-color: #2563eb;
@@ -85,35 +98,38 @@
             font-weight: 500;
             transition: background-color 0.2s ease;
         }
+
         .btn:hover {
             background-color: #1d4ed8;
         }
     </style>
 </head>
+
 <body>
 
-<div class="card">
-    <div class="spinner"></div>
-    <h1>Đang tải hệ thống quản lý tiến độ ngầm hóa</h1>
-    <p>Vui lòng đợi trong giây lát...</p>
-    <a href="#" id="redirect-link" class="btn">Truy cập ngay</a>
-</div>
+    <div class="card">
+        <div class="spinner"></div>
+        <h1>Đang tải hệ thống quản lý tiến độ ngầm hóa</h1>
+        <p>Vui lòng đợi trong giây lát...</p>
+        <a href="#" id="redirect-link" class="btn">Truy cập ngay</a>
+    </div>
 
-<script>
-    // ==========================================
-    // CHỈ CẦN THAY ĐỔI LINK Ở BIẾN NÀY SAU NÀY
-    // ==========================================
-    const TARGET_URL = "https://script.google.com/macros/s/AKfycbwxV3yj4oD8sj6pD0_PVs3rJCMnRRyChmhUBoDzJRCjxan5eTgOP-JCkYdKF07JGRIkuA/exec";
+    <script>
+        // ==========================================
+        // CHỈ CẦN THAY ĐỔI LINK Ở BIẾN NÀY SAU NÀY
+        // ==========================================
+        const TARGET_URL = "https://script.google.com/macros/s/AKfycbw0oMiAIWWTOfqEtjE6HZsxXW0fhhgzk97cByndjey7zGIsOBETXJ0Hym6FNnBYGENlOg/exec";
 
-    // Tự động gán link vào nút bấm
-    document.getElementById("redirect-link").href = TARGET_URL;
+        // Tự động gán link vào nút bấm
+        document.getElementById("redirect-link").href = TARGET_URL;
 
-    // Tự động gán link vào thẻ meta refresh
-    document.getElementById("meta-refresh").content = "0;url=" + TARGET_URL;
-    
-    // Thực hiện chuyển hướng ngay lập tức
-    window.location.replace(TARGET_URL);
-</script>
+        // Tự động gán link vào thẻ meta refresh
+        document.getElementById("meta-refresh").content = "0;url=" + TARGET_URL;
+
+        // Thực hiện chuyển hướng ngay lập tức
+        window.location.replace(TARGET_URL);
+    </script>
 
 </body>
+
 </html>
